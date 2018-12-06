@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXPasswordField?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="500.0" prefWidth="500.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <Pane prefHeight="500.0" prefWidth="500.0">
+         <children>
+            <ImageView fitHeight="500.0" fitWidth="500.0">
+               <image>
+                  <Image url="@fondo.jpg" />
+               </image>
+            </ImageView>
+         </children>
+      </Pane>
+      <GridPane alignment="CENTER" prefHeight="500.0" prefWidth="500.0">
+        <columnConstraints>
+            <ColumnConstraints hgrow="SOMETIMES" maxWidth="182.0" minWidth="10.0" prefWidth="135.0" />
+          <ColumnConstraints hgrow="SOMETIMES" maxWidth="388.0" minWidth="10.0" prefWidth="231.0" />
+          <ColumnConstraints hgrow="SOMETIMES" maxWidth="157.0" minWidth="10.0" prefWidth="134.0" />
+        </columnConstraints>
+        <rowConstraints>
+          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+        </rowConstraints>
+         <children>
+            <VBox alignment="CENTER" maxHeight="-Infinity" maxWidth="-Infinity" prefHeight="285.0" prefWidth="294.0" spacing="20.0" style="-fx-background-color: #91BED4; -fx-background-radius: 15;" styleClass="textColor" stylesheets="@application.css" GridPane.columnIndex="1" GridPane.rowIndex="1">
+               <padding>
+                  <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+               </padding>
+               <children>
+                  <ImageView fitHeight="79.0" fitWidth="91.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@reaper.png" />
+                     </image>
+                  </ImageView>
+                  <Label text="Sign in" textFill="#cc6a00">
+                     <font>
+                        <Font name="Microsoft JhengHei UI Light" size="28.0" />
+                     </font>
+                  </Label>
+                  <Label prefHeight="0.0" prefWidth="251.0" text="Hello there , start your app to terrify your friends" textFill="#542f6b" />
+                  <JFXTextField promptText="Username" />
+                  <JFXPasswordField promptText="Password" />
+                  <JFXButton prefHeight="25.0" prefWidth="271.0" style="-fx-background-color: #F2B134;" text="Sing in!" textFill="#171717" />
+                  <HBox>
+                     <children>
+                        <Label alignment="CENTER" prefHeight="31.0" prefWidth="110.0" text="Forgot password?" textAlignment="CENTER" textFill="#b2b2b2" wrapText="true">
+                           <font>
+                              <Font size="11.0" />
+                           </font>
+                        </Label>
+                        <Label alignment="CENTER" prefHeight="31.0" prefWidth="135.0" text="Create a new account " textAlignment="CENTER" textFill="#b2b2b2" wrapText="true">
+                           <font>
+                              <Font size="11.0" />
+                           </font>
+                        </Label>
+                     </children>
+                  </HBox>
+               </children>
+            </VBox>
+         </children>
+      </GridPane>
+   </children>
+</AnchorPane>
